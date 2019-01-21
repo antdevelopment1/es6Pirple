@@ -52,3 +52,23 @@ donut2.showSweetness();
 
 // The way illustrated above is very tedious
 // We can use a constructor pattern for creating objects
+
+function Donut(type, glazed, sweetness, hasChocolate) {
+    this.type = type;
+    this.glazed = glazed;
+    this.sweetness = sweetness;
+    this.hasChocolate = hasChocolate;
+    this.sayType = function () {
+        console.log('Type: ' + this.type);
+    }
+    this.showSweetness = function() {
+        console.log('Sweetness: ' + this.sweetness + '/10');
+    }
+
+}
+
+var newDonut = new Donut('rasberry', false, 9, false);
+
+console.log(newDonut);
+newDonut.sayType();
+newDonut.showSweetness();
