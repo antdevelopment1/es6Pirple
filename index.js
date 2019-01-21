@@ -72,3 +72,10 @@ var newDonut = new Donut('rasberry', false, 9, false);
 console.log(newDonut);
 newDonut.sayType();
 newDonut.showSweetness();
+
+
+// Arrays Collections of Data
+
+var myNamesArray = ["John", "Sam", "Justin", "Sarah", "Emily"];
+var lastNameInArray = myNamesArray.slice(myNamesArray.length - 1);
+console.log(lastNameInArray);
