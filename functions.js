@@ -25,7 +25,7 @@ const users = [
     {name: "Aaron", age: 62}
 ];
 
-function mapUserNames(arr) {
+const mapUserNames = (arr) => {
     const nameOfUsers = users.map((user) => {
         return user.name;
     });
@@ -34,3 +34,10 @@ function mapUserNames(arr) {
 }
 
 console.log(mapUserNames(users));
+
+// We can omit the return keyword
+const addStuff = (a, b) => a + b;
+
+console.log(addStuff(10,20));
+
+
