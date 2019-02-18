@@ -107,3 +107,24 @@ function logItOut(str=vari) {
 }
 
 console.log(logItOut());
+
+// Setting defaults using booleans inside an object
+const bankAccount = {
+    canSpendMoney: true,
+    balance: 100
+}
+function purchaseItem(price, acct=bankAccount) {
+    if (acct.canSpendMoney) {
+        acct.balance -= price;
+        if (acct.balance <= 0) {
+            acct.canSpendMoney = false;
+        }
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(purchaseItem(1000))
+console.log(purchaseItem(10))
+
