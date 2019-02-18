@@ -1,3 +1,4 @@
+// Let and const are scoped to the block it is in and var is scoped to the function
 let count = 0;
 let color;
 
