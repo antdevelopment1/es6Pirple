@@ -92,3 +92,18 @@ function multiply(x=10, y=20) {
 
 console.log(multiply());
 
+
+// Setting defaults for different data types 
+function stringSplitter(str="Hello how are you there") {
+    return str.split(" ");
+}
+console.log(stringSplitter())
+
+// Setting defaults using variables
+const vari = "Something cool";
+
+function logItOut(str=vari) {
+    return str.split(" ");
+}
+
+console.log(logItOut());
