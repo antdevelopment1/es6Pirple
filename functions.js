@@ -75,3 +75,20 @@ const doubleNumbers = (num) => {
 
 console.log(doubleNumbers(numbers));
 
+
+// Setting defaults
+function addNumbers(x, y) {
+    x = x || 5;
+    y = y || 10;
+    return x + y;
+}
+
+console.log(addNumbers());
+
+// Alternative to setting defaults
+function multiply(x=10, y=20) {
+    return x + y;
+}
+
+console.log(multiply());
+
