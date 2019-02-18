@@ -58,3 +58,20 @@ const getEvens = (arr) => {
 }
 
 console.log(getEvens(numbers));
+
+
+// For each which doesnt return an array
+const doubleNumbers = (num) => {
+    const numberContainer = [];
+
+    num.forEach((number) => {
+        // console.log(num)
+        const double = number * 2;
+        numberContainer.push(double);
+    })
+
+    return numberContainer;
+}
+
+console.log(doubleNumbers(numbers));
+
